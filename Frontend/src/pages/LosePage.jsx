@@ -1,5 +1,3 @@
-// 81224506
-// 174c5d52e18cf69bfb117e43c4c44619
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -113,8 +111,8 @@ const LosePage = () => {
         try {
             const response = await axios.get(`https://api.edamam.com/api/food-database/v2/parser`, {
                 params: {
-                    app_id: '81224506',
-                    app_key: '174c5d52e18cf69bfb117e43c4c44619',
+                    app_id: 'ID',
+                    app_key: 'KEY',
                     ingr: foodItem,
                     nutritionType: 'cooking',
                 },
@@ -140,8 +138,8 @@ const LosePage = () => {
         try {
             const response = await axios.get(`https://api.edamam.com/api/food-database/v2/parser`, {
                 params: {
-                    app_id: '81224506',
-                    app_key: '174c5d52e18cf69bfb117e43c4c44619',
+                    app_id: 'ID',
+                    app_key: 'KEY',
                     ingr: inputValue,
                     nutritionType: 'cooking',
                 },
