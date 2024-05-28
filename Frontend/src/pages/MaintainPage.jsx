@@ -290,6 +290,7 @@ const MaintainPage = () => {
         } catch (error) {
             console.error('Error adding food item:', error);
         }
+        window.location.reload();
     };
     const handleDeleteFoodItem = async (index) => {
         const deletedItem = foodItemsInTable[index];
@@ -327,6 +328,7 @@ const MaintainPage = () => {
         setFoodItem('');
         setSuggestions([]);
         notNotified();
+        window.location.reload();
     };
 
     return (
